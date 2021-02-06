@@ -4,26 +4,33 @@ channels:
   - defaults
   - conda-forge
 dependencies:
-  - _libgcc_mutex=0.1=main
+  - _libgcc_mutex=0.1=conda_forge
+  - _openmp_mutex=4.5=1_gnu
   - backcall=0.2.0=py_0
   - blas=1.0=openblas
   - ca-certificates=2021.1.19=h06a4308_0
+  - cairo=1.16.0=h18b612c_1001
   - certifi=2020.12.5=py39h06a4308_0
   - cycler=0.10.0=py39h06a4308_0
   - dbus=1.13.18=hb2f20db_0
   - decorator=4.4.2=pyhd3eb1b0_0
   - expat=2.2.10=he6710b0_2
-  - fontconfig=2.13.0=h9420a91_0
+  - fontconfig=2.13.1=hba837de_1004
   - freetype=2.10.4=h5ab3b9f_0
+  - fribidi=1.0.10=h7b6447c_0
+  - gettext=0.19.8.1=h9b4dc7a_1
   - glib=2.66.1=h92f7085_0
+  - graphite2=1.3.14=h23475e2_0
+  - graphviz=2.42.3=h0511662_0
   - gst-plugins-base=1.14.0=h8213a91_2
   - gstreamer=1.14.0=h28cd5cc_2
+  - harfbuzz=2.4.0=hca77d97_1
   - icu=58.2=he6710b0_3
   - ipykernel=5.3.4=py39hb070fc8_0
   - ipython=7.19.0=py39hb070fc8_1
   - ipython_genutils=0.2.0=pyhd3eb1b0_1
   - jedi=0.17.2=py39h06a4308_1
-  - jpeg=9b=h024ee3a_2
+  - jpeg=9d=h36c2ea0_0
   - jupyter_client=5.3.3=py_0
   - jupyter_core=4.5.0=py_0
   - kiwisolver=1.3.0=py39h66f3464_0
@@ -31,14 +38,16 @@ dependencies:
   - ld_impl_linux-64=2.33.1=h53a641e_7
   - libedit=3.1.20191231=h14c3975_1
   - libffi=3.3=he6710b0_2
-  - libgcc-ng=9.1.0=hdf63c60_0
+  - libgcc-ng=9.3.0=h2828fa1_18
   - libgfortran-ng=7.3.0=hdf63c60_0
+  - libgomp=9.3.0=h2828fa1_18
   - libopenblas=0.3.10=h5a2b251_0
   - libpng=1.6.37=hbc83047_0
   - libsodium=1.0.18=h7b6447c_0
   - libstdcxx-ng=9.1.0=hdf63c60_0
   - libtiff=4.1.0=h2733197_1
-  - libuuid=1.0.3=h1bed415_2
+  - libtool=2.4.6=h7b6447c_1005
+  - libuuid=2.32.1=h7f98852_1000
   - libxcb=1.14=h7b6447c_0
   - libxml2=2.9.10=hb55368b_3
   - lz4-c=1.9.3=h2531618_0
@@ -50,19 +59,23 @@ dependencies:
   - numpy-base=1.19.2=py39h0f7b65f_0
   - olefile=0.46=py_0
   - openssl=1.1.1i=h27cfd23_0
+  - pango=1.42.4=h7062337_4
   - parso=0.7.0=py_0
   - pcre=8.44=he6710b0_0
   - pexpect=4.8.0=pyhd3eb1b0_3
   - pickleshare=0.7.5=pyhd3eb1b0_1003
   - pillow=8.1.0=py39he98fc37_0
   - pip=20.3.3=py39h06a4308_0
+  - pixman=0.38.0=h516909a_1003
   - prompt-toolkit=3.0.8=py_0
   - ptyprocess=0.7.0=pyhd3eb1b0_2
   - pygments=2.7.1=py_0
+  - pygraphviz=1.7=py39h78163bd_0
   - pyparsing=2.4.7=pyhd3eb1b0_0
   - pyqt=5.9.2=py39h2531618_6
   - python=3.9.1=hdb3f193_2
   - python-dateutil=2.8.1=py_0
+  - python_abi=3.9=1_cp39
   - pyzmq=20.0.0=py39h2531618_1
   - qt=5.9.7=h5867ecd_1
   - readline=8.1=h27cfd23_0
@@ -77,6 +90,17 @@ dependencies:
   - tzdata=2020f=h52ac0ba_0
   - wcwidth=0.2.5=py_0
   - wheel=0.36.2=pyhd3eb1b0_0
+  - xorg-kbproto=1.0.7=h7f98852_1002
+  - xorg-libice=1.0.10=h516909a_0
+  - xorg-libsm=1.2.3=h84519dc_1000
+  - xorg-libx11=1.6.12=h516909a_0
+  - xorg-libxext=1.3.4=h516909a_0
+  - xorg-libxpm=3.5.13=h516909a_0
+  - xorg-libxrender=0.9.10=h516909a_1002
+  - xorg-libxt=1.1.5=h516909a_1003
+  - xorg-renderproto=0.11.1=h14c3975_1002
+  - xorg-xextproto=7.3.0=h7f98852_1002
+  - xorg-xproto=7.0.31=h27cfd23_1007
   - xz=5.2.5=h7b6447c_0
   - zeromq=4.3.3=he6710b0_3
   - zlib=1.2.11=h7b6447c_3
