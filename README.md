@@ -14,7 +14,6 @@ For running this project you'll need:
 3. Install `sudo apt-get install graphviz graphviz-dev` in order to install [PyGraphviz](https://pygraphviz.github.io/documentation/stable/install.html)
 4. Create the environment with the same `environment.yml` file. [More details](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file).
 
-
 After that, enter in the jupyter environment and run the notebooks as you wish. 
 
 Controllability in Complex Networks in a Nutshell
