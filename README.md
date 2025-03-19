@@ -1,31 +1,65 @@
 # Optimal Vaccination Strategies on Networks and in Metropolitan Areas
 
-This repository contains the code and data accompanying the paper "[Optimal vaccination strategies on networks and in metropolitan areas](https://doi.org/10.1016/j.idm.2024.06.007)" by María Soledad Aronna and Lucas Machado Moschen.
+This repository contains code for the project on **Optimal Vaccination Strategies in Metropolitan Areas**, which was the master's project of **Lucas M. Moschen**, supervised by **Maria Soledad Aronna**. 
+
+The research resulted in two papers:
+- **Paper 1:** ["Optimal vaccination strategies on networks and in metropolitan areas"](https://doi.org/10.1016/j.idm.2024.06.007) by **María Soledad Aronna** and **Lucas Machado Moschen**.
+- **Paper 2:** (To be published)
+
+## Repository Structure
+
+```
+📂 root
+│── 📜 codes_paper_idm.py                     # Experiments for Paper 1
+│── 📜 codes_paper_lcss_ieee                   # Experiments for Paper 2
+│── 📜 robot_dance_optimal_control             # Model developed in the dissertation
+│── 📜 optimal_control_problem_lcss_ieee_paper.ipynb  # Plots for Paper 2
+│── 📜 robot_dance_model_vaccination.ipynb     # Plots for Paper 1 (with vaccination, no optimal control)
+│── 📜 robot_dance_model.ipynb                 # Plots for Paper 1 (model without vaccination)
+│── 📜 robot_dance_optimal_control.ipynb       # Plots for Paper 1 (with optimal control)
+│── 📂 codes/                                  # Source code for models and optimization
+│── 📂 data/                                   # Sample datasets (metropolitan areas and commuting patterns)
+│── 📂 notebooks/                              # Jupyter notebooks for analysis and visualization
+│── 📂 images/                                 # Figures and output from experiments
+│── 📜 environment.yml                         # Conda environment file
+│── 📜 README.md                               # Project documentation
+```
 
 ## Overview
 
-The study presents a mathematical model for optimal vaccination strategies in interconnected metropolitan areas, considering commuting patterns. 
-The model incorporates a vaccination rate for each city, acting as a control function, and integrates commuting patterns through a weighted adjacency matrix and a parameter that distinguishes day and night periods. 
-The optimal control problem aims to minimize a cost functional that balances the number of hospitalizations and vaccines, including constraints on weekly vaccine availability and application capacity.
-
-## Contents
-
-- **`codes/`**: Source code for the mathematical models and optimization algorithms.
-- **`data/`**: Sample datasets representing metropolitan areas and commuting patterns.
-- **`notebooks/`**: Jupyter notebooks demonstrating the analysis and visualization of results.
-- **`images/`**: Output from experiments.
+This study presents a **mathematical model** for optimal vaccination strategies in interconnected metropolitan areas, considering **commuting patterns**. The model:
+- Defines a **vaccination rate for each city** as a control function.
+- Integrates **commuting patterns** using a weighted adjacency matrix and a **day/night parameter**.
+- Solves an **optimal control problem** minimizing a **cost functional** that balances hospitalizations and vaccine distribution.
+- Includes **constraints** on weekly vaccine availability and application capacity.
 
 ## Requirements
 
-- Python 3.8 or higher
-- Required Python packages are listed in `requirements.yml`.
+- **Python 3.8+**
+- Required dependencies are listed in [`environment.yml`](./environment.yml).
 
-## Reproducing Preprint Results
+## Installation & Setup
 
-To reproduce the experiments and figures from the preprint:
+To set up the environment, use Conda:
 
-1. Install all the necessary libraries.
-2. Execute the notebooks in the `notebooks/` directory.
+```sh
+conda env create -f environment.yml
+conda activate optimal-vaccine
+```
+
+### Updating the Environment
+If you modify `environment.yml` (e.g., add/remove dependencies), update the environment with:
+
+```sh
+conda env update --file environment.yml --prune
+```
+
+## Running Experiments
+
+To reproduce results from the preprint:
+
+1. **Ensure all dependencies are installed.**
+2. **Run the Jupyter notebooks** in the `notebooks/` directory to generate the plots and results.
 
 ## Citation
 
